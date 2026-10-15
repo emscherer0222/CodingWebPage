@@ -357,4 +357,98 @@ body {
 
 
 
+/* Allow the navigation to fit on smaller screens */
+.nav-list {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* About Me banner */
+.about-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* About Me section */
+.about-me-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.about-me-section h1 {
+    font-size: clamp(40px, 7vw, 80px);
+    color: #6b241e;
+}
+
+.about-portrait {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.about-me-section p {
+    max-width: 750px;
+    margin: 25px auto;
+    line-height: 1.6;
+}
+
+/* Portfolio button */
+.about-portfolio-link {
+    margin: 35px auto;
+    text-align: center;
+}
+
+.about-portfolio-button {
+    display: inline-block;
+    background-color: #6b241e;
+    color: #fbfcee;
+    border: 2px solid #6b241e;
+    border-radius: 20px;
+    padding: 14px 28px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.about-portfolio-button:hover {
+    background-color: #fbfcee;
+    color: #6b241e;
+}
+
+/* Contact form button: cream on hover */
+input[type="submit"]:hover {
+    background-color: #fbfcee;
+    color: #6b241e;
+}
+
+/* Footer */
+.contact-footer {
+    padding: 35px 30px;
+    background-color: #6b241e;
+    color: #fbfcee;
+}
+
+.contact-footer p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Keep the negative-space picture within the page */
+.negativespaceimage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+
+
+
+
 
