@@ -1,139 +1,230 @@
 <!doctype html>
-<html>
-	
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>MY WEB DESIGN MANIFESTO</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Gallery | Emily Scherer</title>
+
   <link rel="stylesheet" href="Style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .nav-list {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .work-content {
+      padding: 30px;
+    }
+
+    .portfolio-link {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .portfolio-button {
+      display: inline-block;
+      background-color: #6b241e;
+      color: #fbfcee;
+      border: 2px solid #6b241e;
+      border-radius: 20px;
+      padding: 14px 28px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .portfolio-button:hover {
+      background-color: #fbfcee;
+      color: #6b241e;
+    }
+
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border-color: #777;
+    }
+
+    div.gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 25%;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 50%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+
+      .work-content {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 
-	<body>
-
-<nav class="navbar">
-<ul class="nav-list">
-	<li><a href="CodingAWebpage.html">Home</a></li>
-    <li><a href="#type-pairing">Type Pairing</a></li>
-	<li><a href="#fonts">Fonts</a></li>
-    <li><a href="#width">Width</a></li>
-    <li><a href="#negative-space">Negative Space</a></li>
-    <li><a href="#unity">Unity</a></li>
-	<a href="about.html">About Me</a>
-	<a href="work.html">Work</a>
-	<a href="toolkit.html">Toolkit</a>
-	<a href="connect.html">Connect</a>
-	<a href="Experiments.html">Experiment</a>
-</ul>
-</nav>
-	
-<head>
-<style>
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
 <body>
 
-<h3>Work Gallery</h3>
+  <nav class="navbar" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#type-pairing">Type Pairing</a></li>
+      <li><a href="index.html#fonts">Fonts</a></li>
+      <li><a href="index.html#width">Width</a></li>
+      <li><a href="index.html#negative-space">Negative Space</a></li>
+      <li><a href="index.html#unity">Unity</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="work.html" aria-current="page">Work</a></li>
+      <li><a href="toolkit.html">Toolkit</a></li>
+      <li><a href="connect.html">Connect</a></li>
+      <li><a href="Experiments.html">Experiment</a></li>
+    </ul>
+  </nav>
 
-<p>Welcome to my creative portfolio! This collection showcases some of my favorite projects, including graphic design, branding, digital artwork, and marketing materials. Each project highlights my creativity, design skills, and ability to use different programs, such as Adobe Photoshop, Illustrator, and InDesign. Throughout my work, I focus on design principles like color, typography, balance, contrast, and visual hierarchy to create designs that are both visually appealing and meaningful.</p>
-	
-	<!-- PORTFOLIO LINK -->
-<div class="portfolio-link">
-    <a href="https://emscherer901f.myportfolio.com/"
-       target="_blank"
-       rel="noopener noreferrer"
-	   class="portfolio-button">
+  <main class="work-content">
+
+    <h3>Work Gallery</h3>
+
+    <p>
+      Welcome to my creative portfolio! This collection showcases
+      some of my favorite projects, including graphic design,
+      branding, digital artwork, and marketing materials. Each
+      project highlights my creativity, design skills, and ability
+      to use different programs, such as Adobe Photoshop,
+      Illustrator, and InDesign. Throughout my work, I focus on
+      design principles like color, typography, balance, contrast,
+      and visual hierarchy to create designs that are both
+      visually appealing and meaningful.
+    </p>
+
+    <div class="portfolio-link">
+      <a href="https://emscherer901f.myportfolio.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="portfolio-button">
         Check Out My Portfolio
-    </a>
-</div>
-	
+      </a>
+    </div>
 
+    <div class="clearfix">
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href= "../Images/FlexFrameSunglasses3d.png">
-      <img src="../Images/FlexFrameSunglasses3d.png" alt="FlexFrames Images" width="600" height="400">
-    </a>
-    <div class="desc">A promotional poster for FlexFrames, a customizable and trackable sunglasses brand. Created using Adobe Illustrator, Photoshop, and Canva, the design incorporates clean typography, visual hierarchy, and balance to highlight the product’s unique features.</div>
-  </div>
-</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="FlexFrameSunglasses3d.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="FlexFrameSunglasses3d.png"
+                 alt="FlexFrames sunglasses promotional poster">
+          </a>
 
+          <div class="desc">
+            A promotional poster for FlexFrames, a customizable
+            and trackable sunglasses brand. Created using Adobe
+            Illustrator, Photoshop, and Canva, the design
+            incorporates clean typography, visual hierarchy,
+            and balance to highlight the product’s unique features.
+          </div>
+        </div>
+      </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href= "../Images/LeafAritiza-01.png">
-      <img src="../Images/LeafAritiza-01.png" alt="Aritiza Photo" width="600" height="400">
-    </a>
-    <div class="desc">A seasonal fashion poster inspired by Aritzia’s feminine and minimalist style, highlighting yellow as the featured seasonal color. Created using Adobe Photoshop and Illustrator, the design incorporates flowing botanical illustrations, soft colors, and elegant typography to capture a fresh spring aesthetic.</div>
-  </div>
-</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="LeafAritiza-01.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="LeafAritiza-01.png"
+                 alt="Aritzia-inspired seasonal fashion poster">
+          </a>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href= "../Images/Welcome First Gen Students.png">
-      <img src="../Images/Welcome First Gen Students.png" alt="First Gen Students" width="600" height="400">
-    </a>
-    <div class="desc">An Instagram post created in Canva to welcome and celebrate first-generation students at North Central College. The design uses typography, color, and visual balance to create an inviting atmosphere that promotes inclusivity and school pride.</div>
-  </div>
-</div>
+          <div class="desc">
+            A seasonal fashion poster inspired by Aritzia’s feminine
+            and minimalist style, highlighting yellow as the featured
+            seasonal color. Created using Adobe Photoshop and
+            Illustrator, the design incorporates flowing botanical
+            illustrations, soft colors, and elegant typography to
+            capture a fresh spring aesthetic.
+          </div>
+        </div>
+      </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href= "../Images/Fentybeauty.jpg">
-      <img src="../Images/Fentybeauty.jpg" alt="Fentybeauty" width="600" height="400">
-    </a>
-    <div class="desc">A conceptual Fenty Beauty collaboration featuring Zendaya, inspired by her role in *The Odyssey* and the opportunity to promote beauty products at movie premieres. Created using Adobe Photoshop, Illustrator, and Canva, the design incorporates warm colors, repetition, and bold imagery to emphasize beauty, diversity, and inclusivity.</div>
-  </div>
-</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="Welcome%20First%20Gen%20Students.png"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Welcome%20First%20Gen%20Students.png"
+                 alt="Welcome post for first-generation students">
+          </a>
 
-<div class="clearfix"></div>
+          <div class="desc">
+            An Instagram post created in Canva to welcome and
+            celebrate first-generation students at North Central
+            College. The design uses typography, color, and visual
+            balance to create an inviting atmosphere that promotes
+            inclusivity and school pride.
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="Fentybeauty.jpg"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img src="Fentybeauty.jpg"
+                 alt="Conceptual Fenty Beauty and Zendaya campaign">
+          </a>
+
+          <div class="desc">
+            A conceptual Fenty Beauty collaboration featuring
+            Zendaya, inspired by her role in <em>The Odyssey</em>
+            and the opportunity to promote beauty products at
+            movie premieres. Created using Adobe Photoshop,
+            Illustrator, and Canva, the design incorporates
+            warm colors, repetition, and bold imagery to
+            emphasize beauty, diversity, and inclusivity.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
 
 </body>
 </html>
